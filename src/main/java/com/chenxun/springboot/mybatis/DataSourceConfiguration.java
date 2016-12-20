@@ -60,6 +60,7 @@ public class DataSourceConfiguration {
 	public DataSource dataSource() {
 		
 		log.debug("starter config DataSource");
+		log.debug("这里有一个注解");
 		JdbcProperties master=multiJdbcProerties.getMaster();
 		List<JdbcProperties> slavers=multiJdbcProerties.getSlaver();
 		RoutingDataSource dataSource=new RoutingDataSource();	
